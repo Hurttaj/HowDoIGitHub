@@ -14,6 +14,7 @@ namespace Radio
             radio.OnOff();
             radio.Volume = 4;
             radio.Frequency = 56000.0;
+            radio.Frequency = 1300.0;
             radio.Frequency = 2400.0;
             radio.PrintData();
             Console.ReadLine();
