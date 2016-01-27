@@ -17,7 +17,7 @@ namespace Rekisteri
 
         public override string ToString()
         {
-            return "First name: " + FirstName + "Last name: " + LastName + "Social Security Number: " + SSN;
+            return "First name: " + FirstName + " Last name: " + LastName + " Social Security Number: " + SSN;
         }
     }
 }
