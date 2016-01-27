@@ -20,7 +20,8 @@ namespace Tyring
             car.Name = "PoS";
             car.Model = "Trabant";
 
-            Console.WriteLine(car.ToString());
+            Console.WriteLine(car.ToString()); //Miks tää ei toimi
+            
 
         }
     }
