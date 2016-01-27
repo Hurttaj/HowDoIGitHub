@@ -9,7 +9,7 @@ namespace CD
     class Song
     {
         public string SongName { get; set; }
-        public float Length { get; set; }
+        public double Length { get; set; }
 
         public override string ToString()
         {
