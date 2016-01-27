@@ -65,7 +65,7 @@ namespace Rekisteri
 
         public void PrintCollection()
         {
-            Console.WriteLine("MRGLRGLRLGr");
+            Console.WriteLine("Persons in Collection:");
             foreach (Person person in persons)
             {
                 Console.WriteLine(person.ToString());
