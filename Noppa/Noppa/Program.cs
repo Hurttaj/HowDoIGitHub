@@ -10,11 +10,10 @@ namespace Noppa
     {
         static void Main(string[] args)
         {
-            bool x;
             int count;
             Console.WriteLine("Anna heittojen määrä");
             string line = Console.ReadLine();
-            x = int.TryParse(line, out count);
+            int.TryParse(line, out count);
             if (count > 0)
             {
                 double total = 0;
