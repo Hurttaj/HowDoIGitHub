@@ -15,21 +15,27 @@ namespace Noppa
             Console.WriteLine("Anna heittojen määrä");
             string line = Console.ReadLine();
             x = int.TryParse(line, out count);
+            if (count > 0)
+            {
+                double total = 0;
 
-            double total = 0;
-
-            int loop = 0;
-            Random rand = new Random();
-            Noppa noppa = new Noppa();   
-            while (loop < count)
+                int loop = 0;
+                Random rand = new Random();
+                Noppa noppa = new Noppa();
+                while (loop < count)
                 {
-                
-                int perkele = noppa.Roll(rand);
-                total += perkele;
-                loop++;
+
+                    int perkele = noppa.Roll(rand);
+                    total += perkele;
+                    loop++;
                 }
                 Console.WriteLine(total);
                 Console.WriteLine(total / count);
+            }
+            else
+            {
+                Console.WriteLine("Olet aika pässi.");
+            }
         }
     }
 }
